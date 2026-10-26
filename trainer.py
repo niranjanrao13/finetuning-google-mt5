@@ -20,7 +20,8 @@ from config import (
     push_to_hub,
     num_train_epochs,
     fp16,
-    gradient_accumulation_steps
+    gradient_accumulation_steps,
+    trained_model_checkpoint
 )
 
 
@@ -66,7 +67,7 @@ def build_model():
 def build_training_args():
     model_name = model_checkpoint.split("/")[-1]
     return Seq2SeqTrainingArguments(
-        f"{model_name}-finetuned-{source_lang}-to-{target_lang}-200k",
+        trained_model_checkpoint,
         eval_strategy=eval_strategy,
         learning_rate=learning_rate,
         optim=optim,
