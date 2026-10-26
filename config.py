@@ -22,4 +22,9 @@ predict_with_generate = True
 generation_max_length = 128
 save_total_limit = 3
 push_to_hub = True
- 
+
+
+#eval.py
+trained_model_checkpoint = "lycanthropeus/mt5-small-finetuned-en-to-ar-200k"
+N_EVAL = 100
+MAX_WORKERS = 8
