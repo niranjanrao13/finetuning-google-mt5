@@ -1,0 +1,6 @@
+transformers
+datasets
+sacrebleu
+groq
+sentencepiece
+evaluate

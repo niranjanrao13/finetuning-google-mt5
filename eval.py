@@ -5,7 +5,8 @@ import sacrebleu
 from concurrent.futures import ThreadPoolExecutor
 from groq import Groq
 from datasets import load_dataset, DatasetDict
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, evaluate
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import evaluate
 from config import N_EVAL, MAX_WORKERS
 
 from config import (
