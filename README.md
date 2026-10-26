@@ -1,6 +1,9 @@
 # finetuning-google-mt5
 Finetuning Google MT5 using HF-Transformers. 
 
+Install requirements:
+`pip install -r requirements.txt` into a virtual environment.
+
 Train model using:
 `python trainer.py`
 
